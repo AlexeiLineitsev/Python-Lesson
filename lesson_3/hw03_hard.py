@@ -49,13 +49,24 @@
 
 import os
 
-path = 'C:\gigbrains-python\python\lesson03\home_work\data'
-path = os.path.join(path,'workers')
-f = open ( path , 'r' , encoding = 'UTF-8')
+path = 'C:\geekbrains\Lesson3\data'
+path = os.path.join(path, 'workers')
+f = open(path, 'r', encoding='UTF-8')
 f = f.readlines()
-print(f[0])
-print(f[1])
+f_workers = [i.split() for i in f]
 
+path = 'C:\geekbrains\Lesson3\data'
+path = os.path.join(path, 'hours_of')
+f = open(path, 'r', encoding='UTF-8')
+f_hours_of = [i.split() for i in f]
+
+# f_workers.sort()
+# f_hours_of.sort()
+
+
+
+print(f_workers)
+print(f_hours_of)
 
 
 
